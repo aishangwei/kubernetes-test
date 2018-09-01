@@ -15,7 +15,7 @@ spec:
       volumeMounts:
         - mountPath: /data-mount
           name: data
-      volumes:
-        - name: data
-   emptyDir: {}
-   
+  volumes:
+  - name: data
+    emptyDir: 
+      medium: Memory
