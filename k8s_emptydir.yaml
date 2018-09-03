@@ -6,15 +6,15 @@ metadata:
     name: ubuntu
 spec:
   containers:
-    - image: ubuntu
-      command:
-        - sleep
-        - "3600"
-      imagePullPolicy: IfNotPresent
-      name: ubuntu
-      volumeMounts:
-        - mountPath: /data-mount
-          name: data
+  - image: ubuntu
+    command:
+      - sleep
+      - "3600"
+    imagePullPolicy: IfNotPresent
+    name: ubuntu
+    volumeMounts:
+      - mountPath: /data-mount
+        name: data
   volumes:
   - name: data
     emptyDir: 
