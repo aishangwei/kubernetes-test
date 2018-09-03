@@ -10,14 +10,13 @@ spec:
       - sleep
       - "3600"
     volumeMounts:
-      - name: podinfo
-        mountPath: "/data-mount"
- volumes:
- - name: podinfo
-   downwardAPI:
-     items:
-     - path: "cpu_limit"
-       resourceFieldRef:
-         containerName: downwardapi
-         resource: limits.cpu
-     
+    - name: podinfo
+      mountPath: "/data-mount"
+  volumes:
+  - name: podinfo
+    downwardAPI:
+      items:
+        - path: "cpu_limit"
+          resourceFieldRef:
+            containerName: downwardapi
+            resource: limits.cpu
