@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-cale-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: my-calc
+  template:
+    metadata:
+      labels:
+        run: my-calc
+    spec:
+      containers:
+      - name: my-calc
+        image: aishangwei/my-miscro
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-calc-service
+spec:
+  ports:
+  - protocol: TCP
+    port: 5000
+  type: ClusterIP
+  selector:
+    run: my-calc
