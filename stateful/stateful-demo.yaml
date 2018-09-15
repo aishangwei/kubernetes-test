@@ -13,7 +13,7 @@ spec:
     app: myapp-pod
 ---
 apiVersion: apps/v1
-kind: Statefulset
+kind: StatefulSet
 metadata:
   name: myapp
 spec:
