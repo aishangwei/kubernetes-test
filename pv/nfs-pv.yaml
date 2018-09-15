@@ -7,7 +7,7 @@ metadata:
 spec:
   nfs:
     path: /data/volumes/pv001
-    server: 192.168.20.146
+    server: 192.168.20.147
   accessModes: ["ReadWriteMany","ReadWriteOnce"]
   capacity:
     storage: 5Gi
@@ -21,7 +21,7 @@ metadata:
 spec:
   nfs:
     path: /data/volumes/pv002
-    server: 192.168.20.146
+    server: 192.168.20.147
   accessModes: ["ReadWriteOnce"]
   capacity:
     storage: 5Gi
@@ -35,7 +35,7 @@ metadata:
 spec:
   nfs:
     path: /data/volumes/pv003
-    server: 192.168.20.146
+    server: 192.168.20.147
   accessModes: ["ReadWriteMany","ReadWriteOnce"]
   capacity:
     storage: 20Gi
