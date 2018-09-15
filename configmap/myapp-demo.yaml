@@ -20,8 +20,8 @@ spec:
           name: nginx-config
           key: nginx_port
     - name: NGINX_SERVER_NAME
-    valueFrom:
-      configMapKeyRef:
-        name: nginx-config
-        key: server_name
+      valueFrom:
+        configMapKeyRef:
+          name: nginx-config
+          key: server_name
       
