@@ -12,11 +12,11 @@ spec:
   affinity:
     nodeAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
-      -preference:
-         matchExpressions:
-         - key: zone
-           operator: In
-           values:
-           - foo
-           - bar
-       weight: 60
+      - preference:
+          matchExpressions:
+          - key: zone
+            operator: In
+            values:
+            - foo
+            - bar
+      weight: 60
