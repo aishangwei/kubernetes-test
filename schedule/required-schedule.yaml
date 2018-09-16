@@ -15,7 +15,7 @@ spec:
         nodeSelectorTerms:
         - matchExpressions:
           - key: zone
-          operator: In
-          values:
-          - foo
-          - bar
+            operator: In
+            values:
+            - foo
+            - bar
