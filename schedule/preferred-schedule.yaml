@@ -19,4 +19,4 @@ spec:
             values:
             - foo
             - bar
-      weight: 60
+        weight: 60
